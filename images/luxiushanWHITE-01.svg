@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 142.96">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        font-family: 'Al_Saflers', 'Al Saflers';
+      }
+
+      .cls-4, .cls-5 {
+        fill: #fff;
+        font-size: 26.13px;
+      }
+
+      .cls-5 {
+        font-family: OriginalMagnolia, Magnolia;
+        letter-spacing: -.05em;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-4" transform="translate(15.25 110.05)"><tspan class="cls-1" x="0" y="0">l</tspan><tspan x="6.28" y="0">u</tspan></text>
+    <text class="cls-5" transform="translate(34.92 110.76)"><tspan x="0" y="0">XIUSHAN</tspan></text>
+  </g>
+  <g>
+    <path class="cls-2" d="M49.64,64.81c1.14-2.32,3.35-6.06,7.32-9.44,3.12-2.65,6.2-4.12,8.36-4.95"/>
+    <circle class="cls-3" cx="42.6" cy="52.07" r="1.38"/>
+    <circle class="cls-3" cx="71.28" cy="37.96" r="1.38"/>
+    <path class="cls-2" d="M38.03,68.28c-.17.15-2.74,2.47-2.17,5.77.27,1.58.63,3.53,3.19,4.21s4.3-1.98,6.64-4.99c1.77-1.94,3.35-1.92,3.66-1.9,2.6.11,5.35,3.52,5.4,8.55"/>
+    <path class="cls-2" d="M22.09,41.42c3.44.82,10.22,1.96,18.39,0,8.89-2.13,14.73-6.82,17.37-9.22-1.24,3.27-3.09,9.46-2.28,17.22,1.38,13.24,9.51,21.37,11.56,23.3,9.84,9.31,21.47,10.2,25.19,10.31,14.73.45,24.97-7.75,29.12-11.74,6.83-6.56,9.77-13.9,11.03-17.85"/>
+    <path class="cls-2" d="M70.5,47.16c.15,2.42.82,7.52,4.38,12.42,4.9,6.74,12.93,9.89,19.96,9.67,10.6-.34,20.35-8.39,23.69-20.05"/>
+    <path class="cls-2" d="M83.46,40.26c-1.68,6.63,2.18,13.38,8.44,15.26,6.62,1.99,13.95-2.08,15.75-9.1"/>
+  </g>
+</svg>

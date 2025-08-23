@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiushan Lu | Home</title>
+    <link rel="icon" href="images/luxiushanWHITE-03.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "73gnohyxOOL1_1eHh",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_cr89eyx', 'template_oh4dfob', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <img src="images/luxiushanWHITElongPNG.png">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#cta"><button>Work with Me <img class="inline" src="images/Briefcase.svg"></button></a>
+        </div>
+    </nav>
+    <section id="hero">
+        <div id="intro">
+            <img id="logo" src="images/luxiushanWHITE-02-cropped.svg">
+            <h1>front-end developer</h1>
+        </div>
+        <img id="drawing" src="images/xiuherobob.png">
+        <div id="desc">
+            <p>I build thoughtful websites for mission-driven brands that want a unique, human-first design without sacrificing clarity or usability. </p>
+            <button>Let's Talk <img class="inline" src="images/Icon.svg"></button>
+        </div>
+    </section>
+    <section id="projects">
+        <div id="hands">
+            <img src="images/xiuheroleft.png">
+            <img src="images/xiuheroright.png">
+        </div>
+        <h1>Projects with Purpose</h1>
+        <p class="headerCaption">Click through to see how I tackled each one, what worked, what didn’t, and what I learned.</p>
+        <a href="navisbakery.html">
+            <div class="projectBento">
+                <img class="square" src="images/bakery2.jpg">
+                <img class="desktop" src="images/navisbakeryss.gif">
+                <div class="projectDesc navisBakery">
+                    <div>
+                        <h3>NaVis Bakery</h3>
+                        <p>A handcrafted WordPress site that captures the flavor of NaVis Bakery — cozy, approachable, and built to bring more customers through the door... <span>See More</span></p>
+                    </div>
+                    <div>
+                        <p><span class="tag">WordPress</span><span class="tag">Accessibility</span><span class="tag">Privacy</span></p>
+                    </div>
+                </div>
+                <img class="mobile" src="images/Record_2025-08-06-22-46-07_40deb401b9ffe8e1df2f1cc5ba480b12-ezgif.com-video-to-gif-converter.gif">
+                <img class="skinny" src="images/bakery1.png">
+            </div>
+        </a>
+        <a href="therapicasso.html">
+            <div class="projectBento">
+                <img class="square" src="images/art1.jpg">
+                <img class="desktop" src="images/out (2).gif">
+                <div class="projectDesc therapicasso">
+                    <div>
+                        <h3>Therapicasso</h3>
+                        <p>A responsive, visually engaging website built in Webflow, capturing Therapicasso’s mission—using creativity to support mental health, especially among children.... <span>See More</span></p>
+                    </div>
+                    <div>
+                        <p><span class="tag">Webflow</span><span class="tag">Redesign</span><span class="tag">Client Communication</span></p>
+                    </div>
+                </div>
+                <img class="mobile" src="images/Record_2025-08-07-17-46-53_40deb401b9ffe8e1df2f1cc5ba480b12-ezgif.com-video-to-gif-converter.gif">
+                <img class="skinny" src="images/art2.jpg">
+            </div>
+        </a>
+    </section>
+    <section id="value">
+        <img src="images/image-1700206819taK.png">
+        <div>
+            <h1>No Cookie-Cutters Here</h1>
+            <p>I design every site to feel like it could only belong to you. Whether you’re a small business or nonprofit, I start by understanding your voice, audience, and goals. Then I craft a site that blends storytelling with strategy, from color choices to layout decisions, so that every click feels intentional.</p>
+            <p>A good website isn’t just pretty. It makes people feel something, and take action. Because in a world of copy-paste websites, people remember the ones that feel alive.</p>
+        </div>
+        <div>
+            <img id="cookie1" src="images/cookieee.png">
+            <img id="cookie2" src="images/cookieie.png">
+        </div>
+    </section>
+    <section id="proof">
+        <h1>Words and Awards</h1>
+        <p class="headerCaption">Here's how you know it's good.</p>
+        <div id="allTests">
+            <div class="testimonial navisBakery">
+                <p class="topPunct">"</p>
+                <div>
+                    <div>
+                        <img src="images/front facing photo (1).jpg">
+                    </div>
+                    <h3>Jose Vivas</h3>
+                    <h5>Owner, NaVis Bakery</h5>
+                    <p>When we decided to build a website for NaVis Bakery, I knew it had to be something special — something that truly represented who we are as a family-run Mexican bakery with big dreams. Xiushan took that vision and brought it to life better than I ever imagined.</p>
+                    <p>She built our entire website from scratch, and from day one, she was incredibly professional, organized, and easy to work with. Every question I had, she answered quickly and clearly. Every change I requested — whether big or small — she handled with patience and precision. She respected every milestone and always delivered on time, which made the whole process stress-free for me, even while running the bakery full-time... <span>See More</span></p>
+                </div>
+                <p class="botPunct">"</p>
+            </div>
+            <div class="testimonial therapicasso" style="display: none;">
+                <p class="topPunct">"</p>
+                <div>
+                    <div>
+                        <img src="https://www.shutterstock.com/image-vector/default-avatar-photo-placeholder-grey-600nw-2007531536.jpg">
+                    </div>
+                    <h3>Gabrielle Wong</h3>
+                    <h5>CEO, Therapicasso</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor... <span>See More</span></p>
+                </div>
+                <p class="botPunct">"</p>
+            </div>
+        </div>
+        <div>
+            <div class="ribbons">
+                <img id="ribL" src="images/ribbonleft.png">
+                <img id="ribR" src="images/ribbonright.png">
+            </div>
+            <div class="awards">
+                <div>
+                    <h5>Second Place</h5>
+                    <h3>MAS Hacks</h3>
+                </div>
+                <div>
+                    <h5>Fifth Place</h5>
+                    <h3>FBLA CA Web Design</h3>
+                </div>
+                <div>
+                    <h5>Second Place</h5>
+                    <h3>FBLA CA Graphic Design</h3>
+                </div>
+                <div>
+                    <h5>Second Place</h5>
+                    <h3>SkillsUSA CA Introductory Advertising Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1>The Person Behind the Pixels</h1>
+        <div>
+            <img id="rectL" src="images/Rectangle 3.png">
+            <img id="headshot" src="images/BB165355-2FDD-4E83-BDCF-6B5F2D0013BA_1_105_c 1.png">
+            <h3>Hey, I’m Xiushan (pronounced shoe-sean), a Computer Science major at UC Berkeley.</h3>
+            <p>Originally from sunny SoCal, I love playing games with friends, watching animated shows, art, design, fashion, and birds! I make killer matcha mochi brownies, and I make websites that slay, hard. My design philosophy? Keep it memorable, make it fit, and never be boring.</p>
+            <img id="rectR" src="images/Rectangle 2.png">
+        </div>
+    </section>
+    <section id="form">
+        <div id="cta">
+            <h1>Let's Talk</h1>
+            <p class="headerCaption">Got a question or just wanna say hi? Drop your message below, and I’ll get back to you soon!</p>
+            <div>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+                <div id="vertLine"></div>
+                <div>
+                    <container><a href="mailto:xiushanlu@berkeley.edu"><img src="images/Mail.svg">xiushanlu@berkeley.edu</a></container>
+                    <container><a href="https://www.linkedin.com/in/xiushanlu/"><img src="images/Icon (1).svg">xiushanlu</a></container>
+                    <container><a href="https://github.com/xiushanlu"><img src="images/Github.svg">xiushanlu</a></container>
+                </div>
+            </div>
+        </div>
+        <img id="phone" src="images/phone.png">
+    </section>
+    <footer>
+        <div>
+            <p>© 2025 Xiushan Lu</p>
+            <p>Made in California</p>
+        </div>
+        <img src="images/luxiushanWHITE-03.svg">
+        <p>Designed & built with love (and a little HTML & CSS)</p>
+    </footer>
+</body>
+</html>
