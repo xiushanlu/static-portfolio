@@ -5,6 +5,7 @@ emailjs.init({
 });
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
+
   event.preventDefault();
 
   emailjs.sendForm('service_cr89eyx', 'YOUR_TEMPLATE_ID', this) // Replace with your Service ID and Template ID

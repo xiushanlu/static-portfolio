@@ -14,6 +14,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -544,6 +545,11 @@ footer div p {
     #proof {
         background-position: top 100px center;
     }
+    #proof #allTests {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
     #about div {
         display: flex;
         flex-direction: column;
@@ -554,6 +560,9 @@ footer div p {
     }
     #about #headshot {
         grid-area: 1/1/span 1/span 1;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 5000px;
     }
     #about #rectL, #about #rectR {
         display: none;

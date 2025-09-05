@@ -29,6 +29,11 @@
                     });
             });
         }
+
+        function submitForm(){
+            let form = document.getElementById('contact-form');
+            form.innerHTML = "<p>Thank you for sending a message! I'll get back to you soon.</p>";
+        }
     </script>
 </head>
 <body>
@@ -122,16 +127,18 @@
                 </div>
                 <p class="botPunct">"</p>
             </div>
-            <div class="testimonial therapicasso" style="display: none;">
+            <div class="testimonial therapicasso">
                 <p class="topPunct">"</p>
                 <div>
                     <div>
-                        <img src="https://www.shutterstock.com/image-vector/default-avatar-photo-placeholder-grey-600nw-2007531536.jpg">
+                        <img src="/images/gabby.jpg">
                     </div>
-                    <h3>Gabrielle Wong</h3>
+                    <h3>Gabby/Lex Wong</h3>
                     <h5>CEO, Therapicasso</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor... <span>See More</span></p>
+                    <p>Phenomenal. That word epitomizes Xiushan's attention to detail, TLC (tender love and care), and pure grit & talent - all of which she will utilize to the fullest for your organization. When I first created the Therapicasso website myself from scratch, I didn't quite know how to elevate the website. While I had mastered the basics, Xiushan took the website from basic to brilliant.<br><br>
+                    Ultimately, a website is a vehicle for partners and clients to form their opinion around. Because of Xiushan, the website perfectly showcased the work that our nonprofit poured thousands of hours into. 
+
+                    I am incredibly grateful to have Xiushan as Therapicasso's web designer and I give her my strongest recommendation as a web designer.</p>
                 </div>
                 <p class="botPunct">"</p>
             </div>
@@ -180,7 +187,7 @@
                     <input type="text" id="name" name="name" placeholder="Name">
                     <input type="text" id="email" name="email" placeholder="Email">
                     <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-                    <input id="submit" type="submit" value="Submit">
+                    <input id="submit" type="submit" value="Submit" onclick="submitForm()">
                 </form>
                 <div id="vertLine"></div>
                 <div>
