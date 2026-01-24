@@ -37,23 +37,36 @@
     </script>
 </head>
 <body>
+    <!-- Custom Animated Cursor -->
+    <div class="cursor">
+        <div class="cursor__outer"></div>
+        <div class="cursor__inner"></div>
+    </div>
+    
     <nav>
         <img src="images/luxiushanWHITElongPNG.png">
-        <div>
+        <div id="nav-menu">
             <a href="index.html">Home</a>
             <a href="#projects">Projects</a>
             <a href="#cta"><button>Work with Me <img class="inline" src="images/Briefcase.svg"></button></a>
         </div>
+        <button id="nav-toggle" style="display: none; background: none; border: none; color: white; font-size: 24px; padding: 8px; cursor: pointer; z-index: 999;">☰</button>
     </nav>
     <section id="hero">
-        <div id="intro">
-            <img id="logo" src="images/luxiushanWHITE-02-cropped.svg">
-            <h1>front-end developer</h1>
-        </div>
-        <img id="drawing" src="images/xiuherobob.png">
-        <div id="desc">
-            <p>I build thoughtful websites for mission-driven brands that want a unique, human-first design without sacrificing clarity or usability. </p>
-            <button>Let's Talk <img class="inline" src="images/Icon.svg"></button>
+        <!-- Three.js 3D Background Canvas -->
+        <div id="hero-3d-background"></div>
+        
+        <!-- Hero content wrapper -->
+        <div id="hero-content">
+            <div id="intro">
+                <img id="logo" src="images/luxiushanWHITE-02-cropped.svg">
+                <h1>front-end developer</h1>
+            </div>
+            <img id="drawing" src="images/xiuherobob.png">
+            <div id="desc">
+                <p>I build thoughtful websites for mission-driven brands that want a unique, human-first design without sacrificing clarity or usability. </p>
+                <a href="#cta"><button>Let's Talk <img class="inline" src="images/Icon.svg"></button></a>
+            </div>
         </div>
     </section>
     <section id="projects">
@@ -90,7 +103,7 @@
                         <p>A responsive, visually engaging website built in Webflow, capturing Therapicasso’s mission—using creativity to support mental health, especially among children.... <span>See More</span></p>
                     </div>
                     <div>
-                        <p><span class="tag">Webflow</span><span class="tag">Redesign</span><span class="tag">Client Communication</span></p>
+                        <p><span class="tag">Webflow</span><span class="tag">Redesign</span><span class="tag">Client_Communication</span></p>
                     </div>
                 </div>
                 <img class="mobile" src="images/Record_2025-08-07-17-46-53_40deb401b9ffe8e1df2f1cc5ba480b12-ezgif.com-video-to-gif-converter.gif">
@@ -172,7 +185,7 @@
         <h1>The Person Behind the Pixels</h1>
         <div>
             <img id="rectL" src="images/Rectangle 3.png">
-            <img id="headshot" src="images/BB165355-2FDD-4E83-BDCF-6B5F2D0013BA_1_105_c 1.png">
+            <img id="headshot" src="images/04BD43C7-EFBD-4951-BF1B-EFA06053C45E_1_105_c.jpeg">
             <h3>Hey, I’m Xiushan (pronounced shoe-sean), a Computer Science major at UC Berkeley.</h3>
             <p>Originally from sunny SoCal, I love playing games with friends, watching animated shows, art, design, fashion, and birds! I make killer matcha mochi brownies, and I make websites that slay, hard. My design philosophy? Keep it memorable, make it fit, and never be boring.</p>
             <img id="rectR" src="images/Rectangle 2.png">
@@ -207,5 +220,10 @@
         <img src="images/luxiushanWHITE-03.svg">
         <p>Designed & built with love (and a little HTML & CSS)</p>
     </footer>
+    
+    <!-- Hero 3D Scene - imported from hero3d.js module -->
+    <script type="module" src="hero3d.js"></script>
+</body>
+</html>
 </body>
 </html>

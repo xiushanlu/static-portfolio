@@ -8,8 +8,29 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="casestudies.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>
+        nav {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(-120px);
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+            z-index: 999;
+        }
+
+        nav.visible {
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
+    <!-- Custom Animated Cursor -->
+    <div class="cursor">
+        <div class="cursor__outer"></div>
+        <div class="cursor__inner"></div>
+    </div>
+    
     <nav>
         <img src="images/luxiushanWHITElongPNG.png">
         <div>
@@ -97,5 +118,24 @@
         <img src="images/luxiushanWHITE-03.svg">
         <p>Designed & built with love (and a little HTML & CSS)</p>
     </footer>
+    <script>
+        const nav = document.querySelector('nav');
+        const heroImg = document.getElementById('heroImg');
+
+        function checkHeroVisibility() {
+            const rect = heroImg.getBoundingClientRect();
+            const isHeroOut = rect.bottom < 0;
+            
+            if (isHeroOut) {
+                nav.classList.add('visible');
+            } else {
+                nav.classList.remove('visible');
+            }
+        }
+
+        window.addEventListener('scroll', checkHeroVisibility);
+        checkHeroVisibility();
+    </script>
+    <script src="cursor.js"></script>
 </body>
 </html>
