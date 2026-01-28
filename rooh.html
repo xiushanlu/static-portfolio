@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiushan Lu | Rooh</title>
+    <link rel="icon" href="images/luxiushanWHITE-03.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="casestudies.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>
+        nav {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(-120px);
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+            z-index: 999;
+        }
+
+        nav.visible {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Animated Cursor -->
+    <div class="cursor">
+        <div class="cursor__outer"></div>
+        <div class="cursor__inner"></div>
+    </div>
+    
+    <nav>
+        <img src="images/luxiushanWHITElongPNG.png">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#cta"><button>Work with Me <img class="inline" src="images/Briefcase.svg"></button></a>
+        </div>
+    </nav>
+    <div style="background-image: url('images/rooh-final-desktop.gif')" id="heroImg"></div>
+    <main>
+        <h1 class="intro">Designing a Dashboard That Makes Practice Stick</h1>
+        <p class="intro">A learner dashboard for an AI-powered speech coaching platform, built with gamification, progress tracking, and a design system I implemented in code.</p>
+        <div class="intro">
+            <p class="tagWrapper"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Figma</span></p>
+        </div>
+        <h3>The Brief</h3>
+        <p>Rooh is an AI speech coach that helps users improve communication through practice and real-time feedback. The existing dashboard felt dated and didn't motivate users to return. I redesigned the learner dashboard, created a design system, and built the frontend.<br><br>My Role: Front-End & Design Engineer Intern (Dashboard Design, Design System, Frontend Implementation)</p>
+        <h3>The Problem</h3>
+        <p>I documented several UX issues with the original dashboard:</p>
+        <ul>
+            <li>Greeting showed "Welcome back, USERNAME" instead of the user's first name</li>
+            <li>No clear primary color: pink, yellow, and blue all competed for attention, making the interface feel unfocused</li>
+            <li>No way to view the rest of the skills beyond the top three with most mastery</li>
+            <li>Practice games lacked descriptions: users didn't know what they were clicking into</li>
+            <li>Most graphs of user progress lacked axes or information</li>
+        </ul>
+        <img src="images/case studies/rooh-before.png" class="largeImg">
+        <h3>The Process</h3>
+        <h5>Step 1: Inspiration</h5>
+        <p>I drew from Duolingo, Khan Academy, and Brilliant to understand how learning platforms motivate users to build habits. Key patterns: streaks, XP systems, progress visualization, and reducing friction to start practicing.</p>
+        <h5>Step 2: Defining Metrics</h5>
+        <p>I worked with the backend engineer to decide what to track and display:</p>
+        <ul>
+            <li>Day streaks</li>
+            <li>XP and leveling system</li>
+            <li>Skill mastery percentages</li>
+            <li>Growth chart (unlocks after 5 sessions to avoid discouraging new users)</li>
+            <li>Quick-start: "Redo last session" reduces the flow from 3-10 clicks down to 2</li>
+        </ul>
+        <img src="images/case studies/rooh-metrics.png" class="largeImg">
+        <h5>Step 3: Design System</h5>
+        <p>I created a Tailwind-based style guide with accessible color combinations, typography scale, and reusable components (buttons with all states, cards, progress bars).</p>
+        <img src="images/case studies/rooh-style-guide.png" class="largeImg">
+        <h5>Step 4: Implementation</h5>
+        <p>I built the dashboard in React/Next.js with Tailwind, implementing the designs I created. The growth chart uses Recharts. I made the layout fully responsive for desktop and mobile.</p>
+        <div class="twoColumn">
+            <img src="images/rooh-final-desktop.gif">
+            <img src="images/rooh-final-mobile.gif">
+        </div>
+        <h3>Key Decisions</h3>
+        <p>Here's how I made critical design choices:</p>
+        <table style="width: 60%; margin: 2.5% auto; border-collapse: collapse; text-align: left;">
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <th style="padding: 12px; font-weight: 700;">Decision</th>
+                <th style="padding: 12px; font-weight: 700;">Why</th>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;">"Welcome back, [First Name]!"</td>
+                <td style="padding: 12px;">Personalization increases engagement</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;">Single primary color (blue)</td>
+                <td style="padding: 12px;">Creates visual focus and hierarchy</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;">XP bar at top</td>
+                <td style="padding: 12px;">Immediate progress visibility</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;">Redo last session button</td>
+                <td style="padding: 12px;">2 clicks vs. 3-10 before</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px;">Growth chart locked until 5 sessions</td>
+                <td style="padding: 12px;">Avoids discouraging new users with empty charts</td>
+            </tr>
+        </table>
+        <p style="text-align: center; width: auto; margin: 2.5% auto;"><strong>Tools:</strong> Figma · React · Next.js · Tailwind · Recharts</p>
+        <h3>Reflections</h3>
+        <p>This project pushed me beyond "does it look good?" to "does it make users want to come back?" Gamification isn't just badges,it's surfacing progress at moments that matter. Every design decision served one purpose: reduce friction, increase motivation, and make practice feel rewarding.</p>
+    </main>
+        <section id="projects">
+        <h1>Explore More</h1>
+        <a href="navisbakery.html">
+            <div class="projectBento">
+                <img class="square" src="images/bakery2.jpg">
+                <img class="desktop" src="images/navisbakeryss.gif">
+                <div class="projectDesc navisBakery">
+                    <div>
+                        <h3>NaVis Bakery</h3>
+                        <p>A handcrafted WordPress site that captures the flavor of NaVis Bakery — cozy, approachable, and built to bring more customers through the door... <span>See More</span></p>
+                    </div>
+                    <div>
+                        <p><span class="tag">WordPress</span><span class="tag">Accessibility</span><span class="tag">Privacy</span></p>
+                    </div>
+                </div>
+                <img class="mobile navisBakery" src="images/Record_2025-08-06-22-46-07_40deb401b9ffe8e1df2f1cc5ba480b12-ezgif.com-video-to-gif-converter.gif">
+                <img class="skinny" src="images/bakery1.png">
+            </div>
+        </a>
+        <a href="therapicasso.html">
+            <div class="projectBento">
+                <img class="square" src="images/art1.jpg">
+                <img class="desktop" src="images/out (2).gif">
+                <div class="projectDesc therapicasso">
+                    <div>
+                        <h3>Therapicasso</h3>
+                        <p>A responsive, visually engaging website built in Webflow, capturing Therapicasso’s mission—using creativity to support mental health, especially among children.... <span>See More</span></p>
+                    </div>
+                    <div>
+                        <p><span class="tag">Webflow</span><span class="tag">Redesign</span><span class="tag">Client_Communication</span></p>
+                    </div>
+                </div>
+                <img class="mobile therapicasso" src="images/Record_2025-08-07-17-46-53_40deb401b9ffe8e1df2f1cc5ba480b12-ezgif.com-video-to-gif-converter.gif">
+                <img class="skinny" src="images/art2.jpg">
+            </div>
+        </a>
+        <!--
+        <a href="trusone.html">
+            <div class="projectBento">
+                <img class="square" src="images/case studies/trusone-thumb-1.png">
+                <img class="desktop" src="images/case studies/trusone-preview.png">
+                <div class="projectDesc trusone">
+                    <div>
+                        <h3>TrusOne</h3>
+                        <p>Visual redesign & design system for an EHS compliance platform—creating a design system and elevating the interface from template-quality to enterprise-ready... <span>See More</span></p>
+                    </div>
+                    <div>
+                        <p><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Figma</span></p>
+                    </div>
+                </div>
+                <img class="mobile trusone" src="images/case studies/trusone-mobile.png">
+                <img class="skinny" src="images/case studies/trusone-thumb-2.png">
+            </div>
+        </a>
+        -->
+    </section>
+    <footer>
+        <div>
+            <p>© 2025 Xiushan Lu</p>
+            <p>Made in California</p>
+        </div>
+        <img src="images/luxiushanWHITE-03.svg">
+        <p>Designed & built with love (and a little HTML & CSS)</p>
+    </footer>
+    <script>
+        const nav = document.querySelector('nav');
+        const heroImg = document.getElementById('heroImg');
+
+        function checkHeroVisibility() {
+            const rect = heroImg.getBoundingClientRect();
+            const isHeroOut = rect.bottom < 0;
+            
+            if (isHeroOut) {
+                nav.classList.add('visible');
+            } else {
+                nav.classList.remove('visible');
+            }
+        }
+
+        window.addEventListener('scroll', checkHeroVisibility);
+        checkHeroVisibility();
+    </script>
+    <script src="cursor.js"></script>
+</body>
+</html>

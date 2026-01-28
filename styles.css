@@ -364,11 +364,12 @@ nav a:hover {
     grid-area: 2/3/span 1/span 1;
 }
 
-.projectBento .mobile {
-    grid-area: 1/4/span 2/span 1;
+.projectBento .navisBakery .mobile {
+        background: linear-gradient(rgba(215, 124, 81, 0.5), rgba(72, 44, 31, 0.5));
+
 }
 
-.projectBento .navisBakery, .projectBento .therapicasso {
+.projectBento .navisBakery, .projectBento .therapicasso, .projectBento .rooh {
     background: linear-gradient(rgba(215, 124, 81, 0.5), rgba(72, 44, 31, 0.5));
     display: flex;
     flex-direction: column;
@@ -377,15 +378,25 @@ nav a:hover {
     padding: 0 10%;
 }
 
+.projectBento .mobile {
+    grid-area: 1/4/span 2/span 1;
+    object-fit: contain;
+    padding: 0;
+}
+
 .projectBento .therapicasso {
     background: linear-gradient(rgba(48, 244, 74, 0.5), rgba(10, 93, 44, 0.5));
+}
+
+.projectBento .rooh {
+    background: linear-gradient(rgb( 59, 130, 246), rgb( 29, 78, 216));
 }
 
 .projectBento .tag {
     margin-right: 10px;
 }
 
-.navisBakery p, .therapicasso p {
+.navisBakery p, .therapicasso p, .rooh p{
     margin: 15px 0 30px 0;
 }
 

@@ -99,16 +99,21 @@ loader.load('./models/hero.glb', (gltf) => {
             console.log('✓ Pupils mesh found!', pupilsMesh);
         }
 
-        // Make keyboard and stylus black by name
-        if (node.parent && node.parent.name === 'Corsair_Keyboard' || node.parent && (node.parent.name === 'Corsair_Keyboard' || node.parent && node.parent.name === 'Cube041' || node.parent.name === 'Black_Mouse' || node.parent.name === 'Digital_Pen_Display_Stylus002')) {
+        // Make keyboard, stylus, and mouse white by name
+        if (node.parent && (node.parent.name === 'Corsair_Keyboard' || node.parent.name === 'Cube041' || node.parent.name === 'Black_Mouse' || node.parent.name === 'Digital_Pen_Display_Stylus002')) {
             const mats = Array.isArray(node.material) ? node.material : [node.material];
             mats.forEach((m) => {
                 if (!m) return;
                 m.color.set(0x000000);
-                m.metalness = 0;
-                m.roughness = 1;
+                m.metalness = 0.3;
+                m.roughness = 0.5;
+                if (node.parent && (node.parent.name === "Corsair_Keyboard" || node.parent.name === "Cube041")){
+                    m.metalness = 0.1;
+                    m.roughness = 0.9;
+                }
             });
         }
+
     });
 
     scene.add(heroModel);
@@ -121,11 +126,6 @@ loader.load('./models/hero.glb', (gltf) => {
 
 let mouseX = 0;
 let mouseY = 0;
-// ========================================
-// ANIMATION LOOP with Parallax & Eye Tracking
-// ========================================
-
-const clock = new THREE.Clock();
 
 window.addEventListener('mousemove', (event) => {
   const rect = heroContainer.getBoundingClientRect();
@@ -136,6 +136,10 @@ window.addEventListener('mousemove', (event) => {
 
   mouse.x = (x / rect.width) * 2 - 1;
   mouse.y = - (y / rect.height) * 2 + 1;
+  
+  // Also store for cursor light
+  mouseX = mouse.x;
+  mouseY = mouse.y;
 });
 
 function animate() {
@@ -229,7 +233,7 @@ let rafId;
 
 function animateCursor() {
     // Lerp cursor to mouse position (smooth following)
-    const lerpFactor = isHovering ? 0.15 : 0.2;
+    const lerpFactor = isHovering ? 0.5 : 0.8;
     cursorX += (cursorMouseX - cursorX) * lerpFactor;
     cursorY += (cursorMouseY - cursorY) * lerpFactor;
     

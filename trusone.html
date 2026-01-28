@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiushan Lu | TrusOne</title>
+    <link rel="icon" href="images/luxiushanWHITE-03.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="casestudies.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>
+        nav {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(-120px);
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+            z-index: 999;
+        }
+
+        nav.visible {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Animated Cursor -->
+    <div class="cursor">
+        <div class="cursor__outer"></div>
+        <div class="cursor__inner"></div>
+    </div>
+    
+    <nav>
+        <img src="images/luxiushanWHITElongPNG.png">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#cta"><button>Work with Me <img class="inline" src="images/Briefcase.svg"></button></a>
+        </div>
+    </nav>
+    <div style="background-image: url('images/case studies/trusone-hero.png')" id="heroImg"></div>
+    <main>
+        <h1 class="intro">From Generic to Professional</h1>
+        <p class="intro">A visual redesign for an AI-powered EHS & ISO compliance platform—creating a design system and elevating the interface from template-quality to enterprise-ready.</p>
+        <div class="intro">
+            <p class="tagWrapper"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Figma</span></p>
+        </div>
+        <h3>The Brief</h3>
+        <p>TrusOne is an AI-driven EHS (Environment, Health & Safety) and ISO compliance platform that helps organizations manage compliance requirements. The platform features TrusAI, an intelligent assistant that provides real-time guidance on regulations, safety protocols, and compliance standards. The existing dashboard was functional but looked generic—like any AI-generated template. I was tasked with making it look professional and clean.<br><br>My Role: Software Engineering Intern (Visual Redesign, Design System, Frontend Implementation)</p>
+        <h3>The Problem</h3>
+        <p>The original dashboard worked, but it lacked personality. It looked like a default template—nothing about it said "TrusOne" or felt memorable. For a product selling to enterprise customers, credibility matters.</p>
+        <img src="images/case studies/trusone-before.png" class="largeImg">
+        <h3>The Process</h3>
+        <h5>Step 1 – Design Exploration</h5>
+        <p>I created three visual directions, each exploring different color treatments and styling approaches. The founder chose the third direction for its clean, professional feel.</p>
+        <img src="images/case studies/trusone-directions.png" class="largeImg">
+        <h5>Step 2 – Design System</h5>
+        <p>I built a style guide with:</p>
+        <ul>
+            <li>Color palette based on the TrusOne brand (blue-to-purple gradient)</li>
+            <li>Typography scale (Lato)</li>
+            <li>Button styles (primary/secondary, all states)</li>
+            <li>Card and component patterns</li>
+            <li>Accessible color combinations</li>
+        </ul>
+        <img src="images/case studies/trusone-style-guide.png" class="largeImg">
+        <h5>Step 3 – Implementation</h5>
+        <p>I applied the new design system across the existing screens, updating colors, fonts, and styling. The homepage got a layout refresh. I also edited a ReactBits animated background—changing it from sparkling stars to growing and shrinking purple gradient blobs—which appears across all pages to add visual interest.</p>
+        <img src="images/case studies/trusone-final.png" class="largeImg">
+        <h3>Before → After</h3>
+        <p>Here's how the redesign transformed the platform:</p>
+        <table style="width: 60%; margin: 2.5% auto; border-collapse: collapse; text-align: left;">
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <th style="padding: 12px; font-weight: 700;">Before</th>
+                <th style="padding: 12px; font-weight: 700;">After</th>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;">Generic template look</td>
+                <td style="padding: 12px;">Distinctive, branded feel</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;">No clear design system</td>
+                <td style="padding: 12px;">Documented components and styles</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;">Static, flat background</td>
+                <td style="padding: 12px;">Animated gradient blob background</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px;">Forgettable</td>
+                <td style="padding: 12px;">Professional and credible</td>
+            </tr>
+        </table>
+        <p style="text-align: center; width: auto; margin: 2.5% auto;"><strong>Tools:</strong> Figma · React · TypeScript · Tailwind · shadcn/ui</p>
+        <h3>Reflections</h3>
+        <p>"Reskinning" sounds simple, but creating a cohesive design system that elevates every screen takes real attention to detail. This project taught me that polish isn't superficial—it's what makes users trust a product. In enterprise software, where users are already skeptical of tech solutions, a well-designed interface builds confidence. Every color choice, every spacing decision, every animation serves the larger goal: make compliance feel manageable and professional.</p>
+    </main>
+        <section id="projects">
+        <h1>Explore More</h1>
+        <a href="navisbakery.html">
+            <div class="projectBento">
+                <img class="square" src="images/bakery2.jpg">
+                <img class="desktop" src="images/navisbakeryss.gif">
+                <div class="projectDesc navisBakery">
+                    <div>
+                        <h3>NaVis Bakery</h3>
+                        <p>A handcrafted WordPress site that captures the flavor of NaVis Bakery — cozy, approachable, and built to bring more customers through the door... <span>See More</span></p>
+                    </div>
+                    <div>
+                        <p><span class="tag">WordPress</span><span class="tag">Accessibility</span><span class="tag">Privacy</span></p>
+                    </div>
+                </div>
+                <img class="mobile navisBakery" src="images/Record_2025-08-06-22-46-07_40deb401b9ffe8e1df2f1cc5ba480b12-ezgif.com-video-to-gif-converter.gif">
+                <img class="skinny" src="images/bakery1.png">
+            </div>
+        </a>
+        <a href="therapicasso.html">
+            <div class="projectBento">
+                <img class="square" src="images/art1.jpg">
+                <img class="desktop" src="images/out (2).gif">
+                <div class="projectDesc therapicasso">
+                    <div>
+                        <h3>Therapicasso</h3>
+                        <p>A responsive, visually engaging website built in Webflow, capturing Therapicasso’s mission—using creativity to support mental health, especially among children.... <span>See More</span></p>
+                    </div>
+                    <div>
+                        <p><span class="tag">Webflow</span><span class="tag">Redesign</span><span class="tag">Client_Communication</span></p>
+                    </div>
+                </div>
+                <img class="mobile therapicasso" src="images/Record_2025-08-07-17-46-53_40deb401b9ffe8e1df2f1cc5ba480b12-ezgif.com-video-to-gif-converter.gif">
+                <img class="skinny" src="images/art2.jpg">
+            </div>
+        </a>
+        <a href="rooh.html">
+            <div class="projectBento">
+                <img class="square" src="images/case studies/rooh-thumb-1.jpg">
+                <img class="desktop" src="images/rooh-final-desktop.gif">
+                <div class="projectDesc rooh">
+                    <div>
+                        <h3>Rooh</h3>
+                        <p>Dashboard design & frontend for an AI speech coaching platform—built with gamification, progress tracking, and a design system I implemented in code... <span>See More</span></p>
+                    </div>
+                    <div>
+                        <p><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Figma</span></p>
+                    </div>
+                </div>
+                <img class="mobile rooh" src="images/rooh-final-mobile.gif">
+                <img class="skinny" src="images/case studies/rooh-thumb-2.jpg">
+            </div>
+        </a>
+    </section>
+    <footer>
+        <div>
+            <p>© 2025 Xiushan Lu</p>
+            <p>Made in California</p>
+        </div>
+        <img src="images/luxiushanWHITE-03.svg">
+        <p>Designed & built with love (and a little HTML & CSS)</p>
+    </footer>
+    <script>
+        const nav = document.querySelector('nav');
+        const heroImg = document.getElementById('heroImg');
+
+        function checkHeroVisibility() {
+            const rect = heroImg.getBoundingClientRect();
+            const isHeroOut = rect.bottom < 0;
+            
+            if (isHeroOut) {
+                nav.classList.add('visible');
+            } else {
+                nav.classList.remove('visible');
+            }
+        }
+
+        window.addEventListener('scroll', checkHeroVisibility);
+        checkHeroVisibility();
+    </script>
+    <script src="cursor.js"></script>
+</body>
+</html>
