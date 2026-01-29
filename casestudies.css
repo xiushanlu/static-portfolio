@@ -26,11 +26,10 @@ h5, p, ul {
 }
 
 #heroImg {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: auto;
     padding: 0;
-    background-size: cover;
-    background-position: top center;
+    fit-content: cover;
 }
 
 main {
@@ -83,8 +82,17 @@ h1 {
 
 .projectBento {
     margin: auto;
-    grid-template-rows: 20vw 20vw;
+    grid-template-rows: 25vw 25vw;
     grid-template-columns: 21vw 21vw 21vw 21vw;
+}
+
+.unevenTwoFlex {
+    display: flex;
+    gap: 16px;
+}
+
+.unevenTwoFlex img {
+    min-width: 25%;
 }
 
 .smallImg, .largeImg {
@@ -94,6 +102,10 @@ h1 {
 .smallImg {
     margin: 0 20%;
     width: 60%;
+}
+
+.smallestImg {
+    width: 30%;
 }
 
 .largeImg {
@@ -128,11 +140,14 @@ h1 {
 }
 
 #projects .projectBento {
-    grid-template-rows: 30vw 30vw;
-    margin: 0 5vw;
+    grid-template-rows: 20vw 20vw;
+    margin: 0 5vw 16px;
 }
 
 @media screen and (width <= 825px){
+    .unevenTwoFlex {
+        flex-wrap: wrap;
+    }
     .four-cards {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;

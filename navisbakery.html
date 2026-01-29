@@ -33,13 +33,14 @@
     
     <nav>
         <img src="images/luxiushanWHITElongPNG.png">
-        <div>
+        <div id="nav-menu">
             <a href="index.html">Home</a>
             <a href="#projects">Projects</a>
-            <a href="#cta"><button>Work with Me <img class="inline" src="images/Briefcase.svg"></button></a>
+            <a href="index.html#cta"><button>Work with Me <img class="inline" src="images/Briefcase.svg"></button></a>
         </div>
+        <button id="nav-toggle" style="display: none; background: none; border: none; color: white; font-size: 24px; padding: 8px; cursor: pointer; z-index: 999;">☰</button>
     </nav>
-    <div style="background-image: url('images/case studies/navis site scrolly.gif')" id="heroImg"></div>
+    <img src='images/case studies/navis site scrolly.gif' id="heroImg"></img>
     <main>
         <h1 class="intro">A Sweet New Site For A Neighborhood Bakery</h1>
         <p class="intro">A handcrafted WordPress site that captures the flavor of NaVis Bakery — cozy, approachable, and built to bring more customers through the door.</p>
@@ -213,6 +214,50 @@
 
         window.addEventListener('scroll', checkHeroVisibility);
         checkHeroVisibility();
+
+        // Mobile Hamburger Menu
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        // Show hamburger on mobile
+        function updateNavForMobile() {
+            if (window.innerWidth <= 825) {
+                navToggle.style.display = 'block';
+                navMenu.classList.remove('nav-open');
+            } else {
+                navToggle.style.display = 'none';
+                navMenu.classList.remove('nav-open');
+            }
+        }
+
+        // Toggle menu on hamburger click and change icon
+        navToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('nav-open');
+            navToggle.textContent = isOpen ? '✕' : '☰';
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a, button');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('nav-open');
+                navToggle.textContent = '☰';
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                navMenu.classList.remove('nav-open');
+                navToggle.textContent = '☰';
+            }
+        });
+
+        // Update on window resize
+        window.addEventListener('resize', updateNavForMobile);
+
+        // Initial call
+        updateNavForMobile();
     </script>
     <script src="cursor.js"></script>
 </body>
